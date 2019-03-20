@@ -21,7 +21,7 @@ var pageLimitManual = null;
 var pageLimitSelector = '.search-results__total';
 var nameClassSelector = '.actor-name';
 var titleClassSelector = 'p.subline-level-1';
-var nextButtonClassSelector = '.next-text';
+var nextButtonClassSelector = '#ember1363';
 var resultsPerPage = 10;
 
 var pageLimit = pageLimitManual || getPageLimit();
