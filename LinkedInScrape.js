@@ -21,7 +21,6 @@ var pageLimitManual = null;
 var pageLimitSelector = '.search-results__total';
 var nameClassSelector = '.actor-name';
 var titleClassSelector = 'p.subline-level-1';
-var nextButtonClassSelector = '#ember1363';
 var resultsPerPage = 10;
 
 var pageLimit = pageLimitManual || getPageLimit();
@@ -42,7 +41,7 @@ function scrollFunction() {
     names.push(namesInner[i].innerText);
     titles.push(titlesInner[i].innerText);
   }
-  $(nextButtonClassSelector).click();
+  [].slice.call(document.getElementsByClassName('artdeco-button__text')).filter(x => x.childNodes[0].wholeText.trim() == 'Next')[0].parentElement.click();
   window.scrollTo(0, document.body.scrollHeight);
 }
 
