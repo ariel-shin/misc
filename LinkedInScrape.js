@@ -21,9 +21,10 @@ var pageLimitManual = null;
 var pageLimitSelector = '.search-results__total';
 var nameClassSelector = '.actor-name';
 var titleClassSelector = 'p.subline-level-1';
+var nextButtonClassSelector = '#ember1363';
 var resultsPerPage = 10;
 
-var pageLimit = 2; 
+var pageLimit = 10; //change this
 
 var names = [];
 var titles = [];
@@ -41,7 +42,7 @@ function scrollFunction() {
     names.push(namesInner[i].innerText);
     titles.push(titlesInner[i].innerText);
   }
-  [].slice.call(document.getElementsByClassName('next')).filter(x => x.childNodes[0].wholeText.trim() == 'Next')[0].parentElement.click();
+  $(nextButtonClassSelector).click();
   window.scrollTo(0, document.body.scrollHeight);
 }
 
