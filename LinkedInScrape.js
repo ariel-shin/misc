@@ -21,10 +21,10 @@ var pageLimitManual = null;
 var pageLimitSelector = '.search-results__total';
 var nameClassSelector = '.actor-name';
 var titleClassSelector = 'p.subline-level-1';
-var nextButtonClassSelector = '#ember1363';
+var nextButtonClassSelector = '#ember840'; //double check that this value is the same
 var resultsPerPage = 10;
 
-var pageLimit = 10; //change this
+var pageLimit = 2; //change this
 
 var names = [];
 var titles = [];
